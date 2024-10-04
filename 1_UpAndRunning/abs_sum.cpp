@@ -1,6 +1,3 @@
-//
-// Created by Seshu on 10/4/2024.
-//
 #include <cstdio>
 
 int absolute_value(int x) {
