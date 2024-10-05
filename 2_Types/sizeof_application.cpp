@@ -1,4 +1,6 @@
 #include "cstdio"
+#include "iterator"
+
 
 void taunt(){
     printf("You're a big guy.\n");
@@ -20,5 +22,8 @@ int main(){
     size_t size_d = sizeof(double);
     printf("double: %zd\n", size_d);
     taunt();
+    int arr[] = {1, 2, 3, 4, 5};
+    printf("%zd\n", sizeof(arr));
+    printf("Array length: %zd\n", std::size(arr));
     return 0;
 }
