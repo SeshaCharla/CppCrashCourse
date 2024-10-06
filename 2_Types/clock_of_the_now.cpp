@@ -29,6 +29,12 @@ struct ClockOfTheNow {
         int year;
 };
 
+struct plain_old_POD {
+    int x;
+    char a[20];
+    bool d;
+};
+
 int main() {
     ClockOfTheNow clock;
     printf("Year: %d\n", clock.get_year());
@@ -40,5 +46,7 @@ int main() {
     printf("Year: %d\n", clock.get_year());
     int a{};
     printf("a = %d\n", a);
+    plain_old_POD pod {1, "Hello"};
+    printf("pod struct: %d, %s, %d\n", pod.x, pod.a, pod.d);
     return 0;
 }
